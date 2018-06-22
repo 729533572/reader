@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yn.reader.view.LoginTipActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/base_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/clear"
+        android:minHeight="?attr/actionBarSize">
+
+        <FrameLayout
+            android:id="@+id/back_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/toolbar_back"
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/ab_btn_selector"
+                android:scaleType="center"
+                android:src="@mipmap/ic_back_black" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_marginLeft="48dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/right_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_gravity="right"
+            android:background="@drawable/ab_btn_selector"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/padding_12"
+            android:paddingRight="@dimen/padding_14"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_gravity="right"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/padding_12"
+            android:paddingRight="@dimen/padding_14"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:visibility="visible" />
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="36dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:src="@mipmap/ic_tip_unlogin" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="10dp"
+                android:text="@string/login_tip"
+                android:textColor="@color/sub_title_color"
+                android:textSize="@dimen/text_size_15sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_goto_login"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/btn_login"
+            android:text="@string/login_at_once"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="108dp"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

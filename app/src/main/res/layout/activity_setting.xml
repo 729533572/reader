@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f6f6"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@drawable/divider_line"
+        android:orientation="vertical"
+        android:showDividers="middle|end">
+
+        <include layout="@layout/base_toolbar" />
+
+        <FrameLayout
+            android:id="@+id/fl_clear_cache"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/white_btn_bg"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/clear_cache"
+                android:textColor="@color/common_black" />
+
+            <TextView
+                android:id="@+id/tv_cache_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginLeft="32dp"
+                android:textColor="@color/common_black"
+                android:textSize="@dimen/text_size_11sp" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_auto_buy"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/white_btn_bg"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="@string/chapter_auto_buy"
+                android:textColor="@color/common_black" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:duplicateParentState="true"
+                android:src="@drawable/selector_icon_buy" />
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:id="@+id/fl_private_agreement"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/white_btn_bg"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/privacy_item"
+                android:textColor="@color/common_black" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:background="@drawable/ic_account_more" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_check_newest_version"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/white_btn_bg"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/version_name"
+                android:textColor="@color/common_black" />
+
+            <TextView
+                android:id="@+id/tv_version_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginLeft="32dp"
+                android:textColor="@color/sub_title_color"
+                android:textSize="@dimen/text_size_14sp" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/log_out"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="170dp"
+            android:background="@drawable/white_btn_bg"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/divider_color" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="@string/quick"
+                android:textColor="#ff5252"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/divider_color" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

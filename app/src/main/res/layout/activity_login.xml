@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f8f8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="104dp"
+                android:orientation="vertical">
+
+                <com.yn.reader.login.views.CleanEditText
+                    android:id="@+id/et_email_phone"
+                    style="@style/login_edit_style"
+                    android:layout_marginBottom="30dp"
+                    android:hint="@string/phone"
+                    android:inputType="phone"
+                    android:paddingLeft="56dp" />
+
+                <com.yn.reader.login.views.CleanEditText
+                    android:id="@+id/et_password"
+                    style="@style/login_edit_style"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="56dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="42dp"
+                android:layout_marginTop="109dp"
+                android:src="@drawable/login_phone_indicator" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="42dp"
+                android:layout_marginTop="187dp"
+                android:src="@drawable/login_password_indicator" />
+
+            <RelativeLayout
+                android:id="@+id/bottom_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/input_layout"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/tv_create_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="28dp"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:text="@string/quick_register"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:id="@+id/tv_forget_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="28dp"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:text="@string/forget_password"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/bottom_layout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_login"
+                android:onClick="onClick"
+                android:text="@string/login"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <include layout="@layout/base_toolbar" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/third_login_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="46dp"
+            android:layout_marginTop="46dp">
+
+            <TextView
+                android:id="@+id/iv_qq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:drawablePadding="16dp"
+                android:drawableTop="@drawable/ic_qq"
+                android:onClick="onClick"
+                android:text="@string/login_qq"
+                android:textColor="#999999"
+                android:visibility="invisible" />
+
+            <TextView
+
+                android:id="@+id/tv_wechat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawablePadding="16dp"
+                android:drawableTop="@drawable/ic_wechat"
+                android:onClick="onClick"
+                android:text="@string/login_wechat"
+                android:textColor="#999999" />
+
+            <TextView
+                android:id="@+id/iv_sina"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="60dp"
+                android:drawablePadding="16dp"
+                android:drawableTop="@drawable/ic_weibo"
+                android:onClick="onClick"
+                android:text="@string/login_weibo"
+                android:textColor="#999999"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

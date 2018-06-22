@@ -1,0 +1,99 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="SplashTheme" parent="AppTheme">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="TabLayoutTextStyle">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="statusMultiImageView">
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:layout_height">90dp</item>
+        <item name="android:layout_width">90dp</item>
+    </style>
+    <style name="anim_pop_checkaddshelf">
+        <item name="android:windowEnterAnimation">@anim/anim_pop_checkaddshelf_in</item>
+        <item name="android:windowExitAnimation">@anim/anim_pop_checkaddshelf_out</item>
+    </style>
+
+    <style name="anim_pop_chapterlist">
+        <item name="android:windowEnterAnimation">@anim/anim_pop_chapterlist_in</item>
+        <item name="android:windowExitAnimation">@anim/anim_pop_chapterlist_out</item>
+    </style>'
+
+    <style name="anim_pop_moresetting">
+        <item name="android:windowEnterAnimation">@anim/anim_pop_moresetting_in</item>
+        <item name="android:windowExitAnimation">@anim/anim_pop_moresetting_out</item>
+    </style>
+
+    <style name="anim_pop_windowlight">
+        <item name="android:windowEnterAnimation">@anim/anim_pop_windowlight_in</item>
+        <item name="android:windowExitAnimation">@anim/anim_pop_windowlight_out</item>
+    </style>
+    <style name="anim_pop_windowmenumore">
+        <item name="android:windowEnterAnimation">@anim/anim_pop_windowmenumore_in</item>
+        <item name="android:windowExitAnimation">@anim/anim_pop_windowmenumore_out</item>
+    </style>
+
+    <!-- 登录注册样式 -->
+    <style name="login_edit_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:textColor">#333333</item>
+        <item name="android:textColorHint">#969696</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:background">@drawable/login_edit_bg</item>
+        <item name="android:cursorVisible">true</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:drawableRight">@mipmap/ic_delete_grey</item>
+        <item name="android:drawableLeft">@mipmap/ic_delete_grey</item>
+        <item name="android:paddingLeft">15dp</item>
+    </style>
+    <style name="popWindow_animation_bottom">
+        <item name="android:windowEnterAnimation">@anim/popupwindow_bottom_enter</item>
+        <item name="android:windowExitAnimation">@anim/popupwindow_bottom_exit</item>
+    </style>
+    <style name="popWindow_animation_top">
+        <item name="android:windowEnterAnimation">@anim/popupwindow_top_enter</item>
+        <item name="android:windowExitAnimation">@anim/popupwindow_top_exit</item>
+    </style>
+    <style name="popWindow_animation_center">
+        <item name="android:windowEnterAnimation">@anim/popupwindow_center_enter</item>
+        <item name="android:windowExitAnimation">@anim/popupwindow_center_exit</item>
+    </style>
+    <style name="versionCheckLibvtransparentTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+    <!--自更新对话框样式-->
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+
+        <item name="android:windowFrame">@null</item>
+
+        <item name="android:windowIsFloating">true</item>
+
+        <item name="android:windowIsTranslucent">true</item>
+
+        <item name="android:windowNoTitle">true</item>
+
+        <item name="android:background">@android:color/transparent</item>
+
+        <item name="android:windowBackground">@android:color/transparent</item>
+
+        <item name="android:backgroundDimEnabled">true</item>
+
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+</resources>

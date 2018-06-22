@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/category_rec"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            android:paddingTop="18dp" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <ImageView
+        android:id="@+id/iv_advertisement_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="104dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone"/>
+</LinearLayout>

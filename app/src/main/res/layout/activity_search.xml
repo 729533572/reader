@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2016 JustWayward Team
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_library"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/home_search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="center_vertical"
+        android:background="@color/white"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/top_search_box_bg" />
+
+        <EditText
+            android:id="@+id/searchEngine"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginLeft="@dimen/padding_12"
+            android:layout_marginRight="40dp"
+            android:background="@null"
+            android:hint="@string/input_hint"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:maxLength="10"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/cancel_search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|right"
+            android:gravity="center"
+            android:text="@string/cancel" />
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider_color" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:id="@+id/ll_search_history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="@dimen/space_vertical_normal">
+                <TextView
+                    android:id="@+id/tvSearchHistory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingBottom="14dp"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="18dp"
+                    android:text="搜索历史"
+                    android:textColor="@color/search_text_color"
+                    android:textSize="14dp" />
+
+                <com.yn.reader.widget.tag.TagView
+                    android:id="@+id/tag_search_history"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    app:lineMargin="14dp"
+                    app:tagMargin="14dp"
+                    app:textPaddingBottom="3dp"
+                    app:textPaddingLeft="10dp"
+                    app:textPaddingRight="10dp"
+                    app:textPaddingTop="3dp" />
+
+                <FrameLayout
+                    android:id="@+id/fl_delete_search_record"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/tv_delete_search_record"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:paddingBottom="6dp"
+                        android:paddingRight="@dimen/activity_horizontal_margin"
+                        android:text="@string/delete_search_record"
+                        android:textColor="#05d42f"
+                        android:textSize="@dimen/text_size_12sp" />
+                </FrameLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="14dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="18dp"
+                    android:text="@string/search_hot_search"
+                    android:textColor="@color/search_text_color" />
+
+                <com.yn.reader.widget.tag.TagView
+                    android:id="@+id/tag_hot_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    app:lineMargin="14dp"
+                    app:tagMargin="14dp"
+                    app:textPaddingBottom="3dp"
+                    app:textPaddingLeft="10dp"
+                    app:textPaddingRight="10dp"
+                    app:textPaddingTop="3dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

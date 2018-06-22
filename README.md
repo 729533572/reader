@@ -1,2 +1,2 @@
-# reader
-小说阅读器
+# Reader
+reader

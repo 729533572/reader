@@ -1,0 +1,185 @@
+<resources>
+    <string name="app_name">追看小说</string>
+    <string name="hold_place">追看小说</string>
+    <string name="weichat_login">微信登录</string>
+    <string name="errcode_cancel">授权取消</string>
+    <string name="errcode_deny">拒绝授权</string>
+    <string name="errcode_unsupported">不支持错误</string>
+    <string name="errcode_unknown">未知错误</string>
+    <string name="welcome_back">欢迎回来</string>
+    <string name="login_service_error">登录服务器错误</string>
+    <string name="click_to_skip">点击跳过</string>
+    <string name="home">首页</string>
+    <string name="bookshelf">书架</string>
+    <string name="category">分类</string>
+    <string name="account">账户</string>
+    <string name="search">搜索</string>
+    <string name="more">更多</string>
+    <string name="search_hot_search">热门搜索</string>
+    <string name="cancel">取消</string>
+    <string name="input_hint">请输入搜索内容</string>
+    <string name="recommend">编辑推荐</string>
+    <string name="category_detail">分类详情</string>
+    <array name="home_page_titles">
+        <item>精选</item>
+        <item>男生</item>
+        <item>女生</item>
+    </array>
+    <array name="shelf_page_titles">
+        <item>收藏</item>
+        <item>历史</item>
+    </array>
+    <array name="notice_page_titles">
+        <item>系统</item>
+        <item>用户</item>
+    </array>
+    <array name="category_page_titles">
+        <item>男生</item>
+        <item>女生</item>
+    </array>
+    <string name="book_detail_remove_collection">不追了</string>
+    <string name="book_detail_join_collection">追更新</string>
+    <string name="book_detail_retention_ratio">%1$s%%</string>
+    <string name="book_detail_hot_reviews">热门评论</string>
+    <string name="book_detail_community">%1$s的社区</string>
+    <string name="book_detail_post_count">共有%1$d个帖子</string>
+    <string name="book_detail_recommend_book_list">推荐书单</string>
+    <string name="click_to_login">立即登录</string>
+    <string name="vip_remain_day">包月剩余天数</string>
+    <string name="charge">充值</string>
+    <string name="read_point">阅读点</string>
+    <string name="bug">购买</string>
+    <string name="buy_record">消费记录</string>
+    <string name="charge_record">充值记录</string>
+    <string name="message">消息</string>
+    <string name="setting">设置</string>
+    <string name="put_bookshelf">加入书架</string>
+    <string name="start_read">开始阅读</string>
+    <string name="guss_you_like">猜你喜欢</string>
+    <string name="latest">最新</string>
+    <string name="dir">目录</string>
+    <string name="nickname_title">昵称</string>
+    <string name="gender_title">性别</string>
+    <string name="toolbar_title_edit_profile">编辑资料</string>
+    <string name="male">男</string>
+    <string name="female">女</string>
+    <string name="update_userprofile_error">更新资料失败</string>
+    <string name="mutil_message">最多只能输入十个字</string>
+    <string name="dialog_tips">提示</string>
+    <string name="sure_log_out">确定退出登录么?</string>
+    <string name="cancle">取消</string>
+    <string name="logout">退出</string>
+    <string name="progress_dialog">正在退出登录...</string>
+    <string name="please_wait">请稍后</string>
+    <string name="tv_read_durprogress">观看至:%s</string>
+    <string name="tv_book_name">《%s》</string>
+    <string name="tv_searchbook_lastest">最新章节:%s</string>
+    <string name="tv_pop_checkaddshelf">是否将《%s》放入书架？</string>
+    <string name="tv_importbook_count">共%s个Text文件</string>
+    <string name="next_chapter">下一章</string>
+    <string name="pre_chapter">上一章</string>
+    <string name="clear_cache">清理应用缓存</string>
+    <string name="tip_clear_cache">确定要清理应用缓存吗？</string>
+    <string name="chapter_auto_buy">章节自动购买</string>
+    <string name="privacy_item">隐私条款</string>
+    <string name="version_name">版本</string>
+    <string name="quick">退出登录</string>
+    <string name="setting_title">设置</string>
+    <string name="mark_readed">标记已读</string>
+    <string name="complete">完成</string>
+    <string name="select_all">全选</string>
+    <string name="notice">消息</string>
+    <string name="delete">删除</string>
+    <string name="buy">包月购买</string>
+    <string name="buy_tips">注:包月仅可在包月小说中使用</string>
+
+
+    <string name="login">登录</string>
+    <string name="login_at_once">立即登录</string>
+    <string name="phone">请输入手机电话号码</string>
+    <string name="password">请输入密码</string>
+    <string name="use_third_account">第三方账号登录</string>
+    <string name="create_infm_account">创建账号</string>
+    <string name="forget_password">忘记密码</string>
+    <string name="no_install_wechat">未安装微信</string>
+    <string name="no_install_qq">未安装QQ</string>
+    <string name="tip_loging">登录中...</string>
+    <string name="tip_begin_oauth">开始授权...</string>
+    <string name="tip_login_fail">登录失败</string>
+    <string name="oauth_fail">授权失败</string>
+    <string name="oauth_cancle">授权取消</string>
+    <string name="tip_phone_regex_not_right">手机号码格式不正确</string>
+    <string name="tip_account_empty">请输入您的手机号或邮箱地址</string>
+    <string name="tip_account_regex_not_right">手机号格式不正确</string>
+    <string name="tip_password_can_not_be_empty">密码不能为空</string>
+
+    <string name="tip_search_no_result">没有搜索到相应内容</string>
+    <string name="xiaowu">IT_xiao小巫</string>
+    <string name="user_rule">用户协议</string>
+    <string name="create_account">注册</string>
+    <string name="find_password">找回密码</string>
+    <string name="send_verification_code">发送验证码</string>
+    <string name="count_down">%ss</string>
+    <string name="tip_please_input_phone">请输入手机号码</string>
+    <string name="tip_phone_can_not_be_empty">手机号码不能为空</string>
+    <string name="tip_please_input_code">请输入验证码</string>
+    <string name="tip_please_input_6_32_password">请输入6-32个密码</string>
+    <string name="reset_pwd">重置密码</string>
+    <string name="for_sure">确定</string>
+    <string name="find_my_password">确认</string>
+    <string name="login_qq">QQ登录</string>
+    <string name="login_wechat">微信登录</string>
+    <string name="login_weibo">微博登录</string>
+    <string name="current_chapter_progress">当前阅读进度:%s</string>
+    <string name="buy_from_this_chapter">从本章开始购买</string>
+    <string name="change_other">换一换</string>
+    <string name="look_more">更多</string>
+    <string name="more_comment">查看更多评论</string>
+    <string name="hot">人气</string>
+    <string name="total_chapter">共%d章</string>
+    <string name="alread_read">已阅读：%s%%</string>
+    <string name="send_sms_success">验证码发送成功</string>
+    <string name="edit">编辑</string>
+    <string name="select_nothing">您还没有选择任何消息</string>
+    <string name="comment">评论</string>
+    <string name="hot_comment">热门评论</string>
+    <string name="more_hot_comment">加载更多热评</string>
+    <string name="lastComment">最新评论</string>
+    <string name="send">发表</string>
+    <string name="search_result">搜索结果</string>
+    <string name="consumption_record">消费记录</string>
+    <string name="recharge_record">充值记录</string>
+    <string name="add_shelf_success">添加书架成功</string>
+    <string name="no_chapter">无章节</string>
+    <string name="loading">加载中...</string>
+    <string name="price">价格</string>
+    <string name="sort_up">升序</string>
+    <string name="sort_down">降序</string>
+    <string name="buy_read_point">购买阅读点</string>
+    <string name="buy_chapter_tips">购买后即可阅读本章节</string>
+    <string name="added_to_shelf">已加入书架</string>
+    <string name="update_content">更新内容</string>
+    <string name="updating">更新版本</string>
+    <string name="update_title">新版本</string>
+    <string name="add_to_shelf">加入书架</string>
+    <string name="delete_selection">是否确定删除所选</string>
+    <string name="tip_delete_all">是否确定删除全部</string>
+    <string name="quit_application">是否确定退出应用</string>
+    <string name="quit_account">是否确定退出账号</string>
+    <string name="ok">确定</string>
+    <string name="quick_register">快速注册</string>
+    <string name="header_img">头像</string>
+    <string name="login_tip">您还没有登录账号\n登录后即可查看更多!</string>
+    <string name="hot_category">热门分类</string>
+    <string name="expand">展开</string>
+    <string name="share">分享</string>
+    <string name="delete_search_record">删除搜索记录</string>
+    <string name="tip_comment_report_success">举报成功</string>
+    <string name="tip_search_blank">请输入搜索内容</string>
+    <string name="calculating">计算中...</string>
+    <string name="write_comment">写评论</string>
+    <string name="pick_up">收起</string>
+    <string name="find_book_to_read">去找本书看看</string>
+    <string name="tip_no_reading_history">暂无阅读历史</string>
+    <string name="tip_no_reading_collection">暂无收藏书籍</string>
+</resources>

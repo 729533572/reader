@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yn.reader.view.JumpActivity">
+
+    <ImageView
+        android:id="@+id/image_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="160dp"
+        android:src="@drawable/edit_profile_delete_nickname"
+
+        />
+
+    <ImageView
+        android:id="@+id/image_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="156dp"
+        android:src="@drawable/edit_profile_delete_nickname" />
+
+    <TextView
+        android:id="@+id/click_to_continue"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/btn_login"
+        android:gravity="center"
+        android:text="@string/click_to_login"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+
+</LinearLayout>

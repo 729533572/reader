@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/base_toolbar_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:layout_scrollFlags="scroll|enterAlways">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/base_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize">
+
+        <FrameLayout
+            android:id="@+id/back_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/toolbar_back"
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/ab_btn_selector"
+                android:scaleType="center"
+                android:src="@drawable/ic_back" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_marginLeft="48dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/right_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_gravity="right"
+            android:background="@drawable/ab_btn_selector"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/padding_12"
+            android:paddingRight="@dimen/padding_14"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_gravity="right"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/padding_12"
+            android:paddingRight="@dimen/padding_14"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:visibility="visible" />
+    </android.support.v7.widget.Toolbar>
+</LinearLayout>

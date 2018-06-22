@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="?actionBarSize"
+        android:layout_marginTop="?actionBarSize"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp">
+
+                <ImageView
+                    android:id="@+id/ivBookCover"
+                    android:layout_width="80dp"
+                    android:layout_height="114dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="10dp"
+                    android:contentDescription="@null"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/tvBookListTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="6dp"
+                    android:layout_toRightOf="@+id/ivBookCover"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/common_black"
+                    android:textSize="14sp"
+                    tools:text="武侠世界自由行" />
+
+                <TextView
+                    android:id="@+id/tvBookListAuthor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvBookListTitle"
+                    android:layout_toRightOf="@+id/ivBookCover"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/sub_title_color"
+                    android:textSize="12sp"
+                    tools:text="w风雪 | " />
+
+                <TextView
+                    android:id="@+id/tvCatgory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvBookListTitle"
+                    android:layout_toRightOf="@id/tvBookListAuthor"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textSize="13sp"
+                    tools:text="仙侠 | " />
+
+                <TextView
+                    android:id="@+id/tvWordCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvBookListAuthor"
+                    android:layout_marginTop="6dp"
+                    android:layout_toRightOf="@+id/ivBookCover"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textSize="13sp"
+                    tools:text="594万字" />
+
+                <TextView
+                    android:id="@+id/tvLatelyUpdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvWordCount"
+                    android:layout_marginTop="6dp"
+                    android:layout_toRightOf="@id/ivBookCover"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textSize="13sp"
+                    tools:text="4月前" />
+
+                <com.yn.reader.widget.tag.TagView
+                    android:id="@+id/book_tag"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvLatelyUpdate"
+                    android:layout_marginTop="6dp"
+                    android:layout_toRightOf="@id/ivBookCover"
+                    app:lineMargin="5dp"
+                    app:tagMargin="10dp"
+                    app:textPaddingBottom="3dp"
+                    app:textPaddingLeft="10dp"
+                    app:textPaddingRight="10dp"
+                    app:textPaddingTop="3dp" />
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tvlongIntro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:textColor="@color/sub_common_black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_expand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:drawableRight="@drawable/selector_icon_expand"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:text="@string/expand"
+                android:textColor="@color/light_primary"
+                android:textSize="@dimen/text_size_14sp"
+                android:visibility="gone"
+                android:drawablePadding="6dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="12dp"
+                android:background="@color/divider_color" />
+
+            <FrameLayout
+                android:id="@+id/fl_last_chapter"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/white_btn_bg"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/latest"
+                    android:textColor="@color/common_black" />
+
+                <TextView
+                    android:id="@+id/latest_chapter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="48dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/sub_common_black" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:src="@drawable/ic_more" />
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:background="@color/divider_color" />
+
+            <FrameLayout
+                android:id="@+id/all_chapters"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/dir"
+                    android:textColor="@color/common_black" />
+
+                <TextView
+                    android:id="@+id/total_chapter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="48dp"
+                    android:textColor="@color/common_black" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:src="@drawable/ic_more" />
+
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:id="@+id/fl_book_detail_advertisement_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="16dp"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:visibility="gone">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="top"
+                    android:background="@color/divider_color" />
+
+                <ImageView
+                    android:id="@+id/iv_book_detail_advertisement_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="16dp"
+                    android:scaleType="center"
+                    android:src="@mipmap/ic_launcher" />
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:background="@color/divider_color" />
+
+
+            <FrameLayout
+                android:id="@+id/comment_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:text="@string/book_detail_hot_reviews"
+                    android:textColor="@color/common_black"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:drawableLeft="@mipmap/ic_write_comment"
+                    android:gravity="right"
+                    android:text="@string/write_comment"
+                    android:textColor="@color/light_primary"
+                    android:textSize="15sp"
+                    android:drawablePadding="4dp"/>
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:background="@color/divider_color" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvHotReview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:foregroundGravity="center" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider_color" />
+
+            <TextView
+                android:id="@+id/tvMoreReview"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:gravity="center"
+                android:text="@string/more_comment"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/divider_color" />
+
+            <TextView
+                android:id="@+id/tvRecommendBookList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="@string/guss_you_like"
+                android:textColor="@color/common_black"
+                android:textSize="13sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:background="@color/divider_color" />
+
+            <com.hysoso.www.viewlibrary.MFSStaticRecyclerView
+                android:id="@+id/rvRecommendBoookList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:foregroundGravity="center" />
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_gravity="bottom">
+
+        <TextView
+            android:id="@+id/btnJoinCollection"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/put_bookshelf"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/tv_start_read"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="?actionBarSize"
+        android:background="@color/divider_color" />
+
+    <include layout="@layout/layout_loading" />
+
+    <include layout="@layout/base_toolbar" />
+</FrameLayout>

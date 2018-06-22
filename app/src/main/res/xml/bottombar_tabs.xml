@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        id="@+id/tab_home"
+        icon="@drawable/tab_home"
+        title="@string/home"
+        inActiveColor="@color/in_active_color"
+        barColorWhenSelected="@color/white" />
+    <tab
+        id="@+id/tab_bookshelf"
+        icon="@drawable/tab_shelf"
+        title="@string/bookshelf"
+        inActiveColor="@color/in_active_color"
+        barColorWhenSelected="@color/white" />
+    <tab
+        id="@+id/tab_category"
+        icon="@drawable/tab_category"
+        title="@string/category"
+        inActiveColor="@color/in_active_color"
+        barColorWhenSelected="@color/white" />
+    <tab
+        id="@+id/tab_account"
+        icon="@drawable/tab_profile"
+        inActiveColor="@color/in_active_color"
+        title="@string/account"
+        barColorWhenSelected="@color/white" />
+
+</tabs>

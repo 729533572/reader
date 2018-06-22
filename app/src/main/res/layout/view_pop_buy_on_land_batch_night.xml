@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/read_bottom_bar__night_bg_color"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider_color" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_bigger_bigger"
+        android:gravity="center"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:text="从本章开始购买"
+        android:textColor="@color/menuColor"
+        android:textSize="@dimen/front_size_large" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider_color_night" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_bigger_bigger"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:id="@+id/tv_nest_ten"
+            android:layout_width="60dp"
+            android:layout_height="24dp"
+            android:background="@drawable/bg_buy_item_night"
+            android:gravity="center"
+            android:text="后10章"
+            android:textColor="@color/select_color_white_accent_night"
+            android:textSize="@dimen/front_size_smaller" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv_nest_fifty"
+            android:layout_width="60dp"
+            android:layout_height="24dp"
+            android:background="@drawable/bg_buy_item_night"
+            android:gravity="center"
+            android:text="后50章"
+            android:textColor="@color/select_color_white_accent_night"
+            android:textSize="@dimen/front_size_smaller" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv_nest_hundred"
+            android:layout_width="60dp"
+            android:layout_height="24dp"
+            android:background="@drawable/bg_buy_item_night"
+            android:gravity="center"
+            android:text="后100章"
+            android:textColor="@color/select_color_white_accent_night"
+            android:textSize="@dimen/front_size_smaller" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv_more"
+            android:layout_width="60dp"
+            android:layout_height="24dp"
+            android:background="@drawable/bg_buy_item_night"
+            android:gravity="center"
+            android:text="更多"
+            android:textColor="@color/select_color_white_accent_night"
+            android:textSize="@dimen/front_size_smaller" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider_color_night" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_bigger_bigger"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="账户余额:"
+            android:textColor="@color/menuColor"
+            android:textSize="@dimen/front_size_large" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red_common"
+                android:textSize="@dimen/front_size_large" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="阅读点"
+                android:textColor="@color/font_size_color"
+                android:textSize="@dimen/front_size_large" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider_color_night" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_bigger_bigger"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="自动购买下一章节"
+            android:textColor="@color/font_size_color"
+            android:textSize="@dimen/front_size_large" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="(可在系统设置中取消)"
+            android:textColor="@color/font_size_color"
+            android:textSize="@dimen/front_size_smallest" />
+
+        <ImageView
+            android:id="@+id/iv_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6dp"
+            android:src="@drawable/selector_icon_buy_night" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider_color_night" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/normal_space"
+                    android:text="实付:"
+                    android:textColor="@color/menuColor"
+                    android:textSize="@dimen/front_size_large" />
+
+                <TextView
+                    android:id="@+id/tv_pay_fact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAccentNight"
+                    android:textSize="@dimen/front_size_large" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="阅读点"
+                    android:textColor="@color/menuColor"
+                    android:textSize="@dimen/front_size_large" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_vertical_normal"
+                android:background="@drawable/bg_line_red"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/activity_horizontal_margin_little"
+                android:paddingRight="@dimen/activity_horizontal_margin_little">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/normal_space"
+                    android:text="原价:"
+                    android:textColor="@color/red_common"
+                    android:textSize="@dimen/front_size_smaller" />
+
+                <TextView
+                    android:id="@+id/tv_pay_original"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red_common"
+                    android:textSize="@dimen/front_size_smaller" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_recharge_buy"
+            android:layout_width="126dp"
+            android:layout_height="42dp"
+            android:background="@drawable/bg_btn_rectangle_night"
+            android:gravity="center"
+            android:text="充值并且购买"
+            android:textColor="#5c7d72"
+            android:textSize="@dimen/front_size_large" />
+    </LinearLayout>
+</LinearLayout>

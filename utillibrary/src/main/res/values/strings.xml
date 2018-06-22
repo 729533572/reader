@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Util Library</string>
+    <string name="permission_read_phone_hint">没有此权限，应用无法读取电话状态，请开启手机状态权限。</string>
+    <string name="permission_send_sms_hint">没有此权限，应用无法发送短信，请开启短信权限。</string>
+    <string name="permission_call_phone_hint">没有此权限，应用无法拨打电话，请开启电话权限。</string>
+    <string name="permission_camera_hint">没有此权限，应用无法拍照，请开启相机权限。</string>
+
+    <string name="permission_access_fine_location_hint">没有此权限，应用无法网络定位，请开启位置权限。</string>
+    <string name="permission_access_coarse_location_hint">没有此权限，应用无法GPS定位，请开启位置权限。</string>
+    <string name="permission_read_external_hint">没有此权限，应用无法读取外部存储文件，请开启存储权限。</string>
+    <string name="permission_white_external_hint">没有此权限，应用无法保存文件进入外部存储设备，请开启存储权限。</string>
+    <string name="permission_get_accounts_hint">没有此权限，应用无法获取手机通讯录，请开启存储权限。</string>
+</resources>

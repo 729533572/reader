@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fl_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="14dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="@dimen/padding_14">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/common_black"
+            android:textSize="15sp"
+            tool:text="title" />
+
+        <TextView
+            android:id="@+id/tv_sub_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:drawablePadding="12sp"
+            android:drawableRight="@drawable/ic_more"
+            android:gravity="center_vertical"
+            android:text="@string/more" />
+
+    </FrameLayout>
+
+    <com.yn.reader.widget.EightPicLayout
+        android:id="@+id/eightPicLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <include layout="@layout/item_shelf" />
+
+        <include layout="@layout/item_shelf" />
+
+        <include layout="@layout/item_shelf" />
+
+        <include layout="@layout/item_shelf" />
+
+        <include layout="@layout/item_shelf" />
+
+        <include layout="@layout/item_shelf" />
+
+        <include layout="@layout/item_shelf" />
+    </com.yn.reader.widget.EightPicLayout>
+
+    <ImageView
+        android:id="@+id/iv_advertisement"
+        android:layout_width="match_parent"
+        android:layout_height="104dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:visibility="visible" />
+</LinearLayout>
